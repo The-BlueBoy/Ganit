@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f1e5;
+    color: #26384a;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    min-height: 78px;
+    background: #1d344a;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-symbol {
+    font-size: 34px;
+    color: #d8ad5a;
+}
+
+.logo h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #e5d8c0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e2b95f;
+}
+
+
+/* ================= MAIN ================= */
+
+.main {
+    width: 92%;
+    max-width: 1450px;
+    margin: auto;
+    padding: 45px 0 60px;
+}
+
+
+/* ================= TITLE ================= */
+
+.title-section {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.title-section h2 {
+    font-size: 40px;
+    color: #692c20;
+    margin-bottom: 12px;
+}
+
+.title-section p {
+    font-family: Arial, sans-serif;
+    color: #52616d;
+}
+
+
+/* ================= INPUT ================= */
+
+.input-box {
+    max-width: 1050px;
+    margin: auto;
+
+    background: #fffdf8;
+    border: 1px solid #d9cbb4;
+    border-radius: 12px;
+
+    padding: 18px;
+
+    display: flex;
+    gap: 15px;
+
+    box-shadow: 0 5px 18px rgba(74, 55, 30, 0.08);
+}
+
+#problemInput {
+    flex: 1;
+
+    height: 58px;
+
+    border: 1px solid #cfc4b0;
+    border-radius: 8px;
+
+    padding: 0 20px;
+
+    font-size: 17px;
+    outline: none;
+}
+
+#problemInput:focus {
+    border-color: #9c6b30;
+}
+
+.solve-btn {
+    width: 150px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #7d3025;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.solve-btn:hover {
+    background: #5e241c;
+}
+
+
+/* ================= EXAMPLES ================= */
+
+.examples {
+    max-width: 1050px;
+    margin: 18px auto 35px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+.examples span {
+    color: #634b38;
+}
+
+.examples button {
+    border: 1px solid #d4c1a1;
+    background: #fffaf0;
+
+    border-radius: 20px;
+
+    padding: 8px 14px;
+
+    cursor: pointer;
+    color: #634b38;
+}
+
+.examples button:hover {
+    background: #f1dfc0;
+}
+
+
+/* ================= OUTPUTS ================= */
+
+.outputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+
+/* ================= CARDS ================= */
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+
+    min-height: 500px;
+
+    box-shadow: 0 5px 18px rgba(74, 55, 30, 0.08);
+}
+
+.modern-card {
+    background: #f4faff;
+    border: 1px solid #a9d4e8;
+}
+
+.ancient-card {
+    background: #fff8ea;
+    border: 1px solid #d5ad71;
+}
+
+
+/* ================= CARD HEADER ================= */
+
+.card-header {
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.modern-card .card-header {
+    background: #e9f6fc;
+}
+
+.ancient-card .card-header {
+    background: #f9edda;
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    color: white;
+}
+
+.modern-icon {
+    background: #245c85;
+}
+
+.ancient-icon {
+    background: #9a6828;
+}
+
+.card-header h3 {
+    font-size: 24px;
+}
+
+.modern-card h3 {
+    color: #153f63;
+}
+
+.ancient-card h3 {
+    color: #702d22;
+}
+
+.card-header p {
+    margin-top: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    color: #65717a;
+}
+
+
+/* ================= CONTENT ================= */
+
+.card-content {
+    padding: 25px;
+}
+
+.section-box {
+    padding: 18px;
+
+    margin-bottom: 18px;
+
+    border-radius: 9px;
+}
+
+.modern-card .section-box {
+    background: #edf8fd;
+    border: 1px solid #cbe5f2;
+}
+
+.ancient-card .section-box {
+    background: #fff5e4;
+    border: 1px solid #ead2ad;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.modern-card .label {
+    color: #17486d;
+}
+
+.ancient-card .label {
+    color: #7b4917;
+}
+
+.problem {
+    font-size: 22px;
+}
+
+
+/* ================= STEPS ================= */
+
+.steps {
+    font-family: Arial, sans-serif;
+}
+
+.step {
+    display: flex;
+    gap: 14px;
+
+    margin: 18px 0;
+}
+
+.step-number {
+    min-width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bold;
+}
+
+.modern-card .step-number {
+    background: #377fae;
+}
+
+.ancient-card .step-number {
+    background: #9a6828;
+}
+
+.step-text {
+    line-height: 1.5;
+    color: #45515b;
+}
+
+.equation {
+    display: block;
+
+    margin-top: 6px;
+
+    font-family: Georgia, serif;
+    font-size: 19px;
+
+    color: #26384a;
+}
+
+
+/* ================= ANSWER ================= */
+
+.answer {
+    padding: 18px;
+
+    margin-top: 15px;
+
+    border-radius: 9px;
+}
+
+.modern-card .answer {
+    background: #e1f2fa;
+}
+
+.ancient-card .answer {
+    background: #f9e9cc;
+}
+
+.answer-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.answer-value {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.modern-card .answer-value {
+    color: #143f61;
+}
+
+.ancient-card .answer-value {
+    color: #702d22;
+}
+
+
+/* ================= ALGORITHM ================= */
+
+.algorithm {
+    margin-top: 20px;
+
+    text-align: center;
+
+    padding: 18px;
+
+    border-radius: 9px;
+
+    background: #f4eee1;
+}
+
+.algorithm h4 {
+    color: #6d3927;
+    margin-bottom: 12px;
+}
+
+.flow {
+    font-family: Arial, sans-serif;
+    color: #594b3c;
+    line-height: 1.8;
+}
+
+
+/* ================= EMPTY ================= */
+
+.empty-message {
+    padding: 40px 10px;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+    color: #777;
+}
+
+
+/* ================= ERROR ================= */
+
+.error {
+    color: #9b3024;
+
+    background: #fde9e6;
+
+    border: 1px solid #e2b5af;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #eee4d4;
+
+    border-top: 1px solid #d5c4a8;
+
+    padding: 22px;
+
+    text-align: center;
+
+    color: #694f3d;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width: 900px) {
+
+    header {
+        padding: 18px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .title-section h2 {
+        font-size: 30px;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    .solve-btn {
+        width: 100%;
+        height: 52px;
+    }
+
+    .outputs {
+        grid-template-columns: 1fr;
+    }
+}

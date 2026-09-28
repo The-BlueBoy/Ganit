@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GANITA | Ancient Indian Mathematics</title>
+
+    <link rel="stylesheet" href="Ganita.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <div class="logo-symbol">ॐ</div>
+
+            <div>
+                <h1>GANIT</h1>
+                <span>Ancient Indian Mathematics</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#examples">Examples</a>
+        </nav>
+
+    </header>
+
+
+    <main class="main">
+
+        <section class="title-section">
+
+            <h2>Enter Your Mathematical Problem</h2>
+
+            <p>
+                Explore the same mathematical problem through
+                modern and ancient Indian mathematical perspectives.
+            </p>
+
+        </section>
+
+
+        <div class="input-box">
+
+            <input
+                type="text"
+                id="problemInput"
+                placeholder="Example: 2x² + 5x - 3 = 0"
+            >
+
+            <button class="solve-btn" onclick="solveProblem()">
+                ✦ Solve
+            </button>
+
+        </div>
+
+
+        <div class="examples">
+
+            <span>Try:</span>
+
+            <button onclick="setExample('25 + 15')">
+                25 + 15
+            </button>
+
+            <button onclick="setExample('2x + 5 = 15')">
+                2x + 5 = 15
+            </button>
+
+            <button onclick="setExample('x² + 5x + 6 = 0')">
+                x² + 5x + 6 = 0
+            </button>
+
+            <button onclick="setExample('2x² + 5x - 3 = 0')">
+                2x² + 5x - 3 = 0
+            </button>
+
+        </div>
+
+
+        <div class="outputs">
+
+            <!-- MODERN MATHEMATICS -->
+
+            <div class="card modern-card">
+
+                <div class="card-header">
+
+                    <div class="icon modern-icon">
+                        ∑
+                    </div>
+
+                    <div>
+
+                        <h3>Modern Mathematics</h3>
+
+                        <p>
+                            Modern mathematical terminology
+                            and step-by-step solution.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="card-content" id="modernOutput">
+
+                    <div class="empty-message">
+                        Enter a problem above to begin.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANCIENT MATHEMATICS -->
+
+            <div class="card ancient-card">
+
+                <div class="card-header">
+
+                    <div class="icon ancient-icon">
+                        ॐ
+                    </div>
+
+                    <div>
+
+                        <h3>Ancient Indian Mathematics</h3>
+
+                        <p>
+                            Ancient Indian mathematical terminology
+                            and computational approach.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="card-content" id="ancientOutput">
+
+                    <div class="empty-message">
+                        समस्या प्रविष्ट करें — Enter a problem.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <strong>GANITA</strong> | I.K.S. Project
+
+        <br>
+
+        Saṅkhyā • Gaṇanā • Bījagaṇita • Algorithmic Thinking
+
+    </footer>
+
+
+    <script src="Ganita.js"></script>
+
+</body>
+
+</html>
